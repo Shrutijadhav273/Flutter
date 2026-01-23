@@ -1,0 +1,80 @@
+Dart is an open-source, client-optimized programming language developed by Google 
+for building fast applications on any platform . 
+
+
+VARIABLES :
+1) interger
+int age=22;
+
+2) Double
+double pi = 3.14;
+
+3)String
+String name = "Shruti";
+
+4)Boolean
+bool isStudent = true;
+
+DATATYPES:
+1) List :
+List<String> fruits = ["Apple", "Banana", "Mango"];
+
+//key value pair 
+2) Map :
+Map<String, int> scores = {"Math": 90, "English": 85};
+
+
+CONTROL STATEMENTS 
+1) if else :
+ if (num % 2 == 0) {
+    print("$num is even");
+  } else {
+    print("$num is odd");
+  }
+
+LOOPS 
+1)for :
+for (int i = 1; i <= 5; i++) {
+    print("Iteration $i");
+  }
+
+2)while :
+ int j = 1;
+  while (j <= 3) {
+    print("While loop $j");
+    j++;
+  }
+
+FUNCTION :
+block of statements to call repetively
+
+int add(int a, int b) {
+  return a + b;
+}
+
+void main() {
+  int result = add(5, 7);
+  print("Sum: $result");
+}
+
+CLASSES AND OBJECTS :
+blueprint of an object 
+object is instance of a class 
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void introduce() {
+    print("Hi, I am $name and I am $age years old");
+  }
+}
+
+void main() {
+  Person p1 = Person("Shruti", 22);
+  p1.introduce();
+}
+
+
