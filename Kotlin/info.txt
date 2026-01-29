@@ -1,0 +1,6 @@
+KOTLIN :
+Kotlin is a modern, statically typed, general-purpose programming language developed by JetBrains
+
+KOTLIN   VS   JAVA :
+kotlin is more concise moder nad safer side alternative to java . (null safety)
+
