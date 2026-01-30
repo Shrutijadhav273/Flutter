@@ -16,7 +16,7 @@ String name = "Shruti";
 bool isStudent = true;
 
 DATATYPES:
-1) List :
+1) List : (Dulicated allowed)
 List<String> fruits = ["Apple", "Banana", "Mango"];
 
 //key value pair 
