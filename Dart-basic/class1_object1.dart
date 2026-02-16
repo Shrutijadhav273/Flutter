@@ -27,7 +27,7 @@ void displayinfo(){
 }
 
 void main(){
-    Student s=new Student();
+    Student s= Student();
     s.displayinfo();
 
 

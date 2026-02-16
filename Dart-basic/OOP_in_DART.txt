@@ -1,0 +1,156 @@
+## 1) Class & Object
+
+### ✅ Class
+
+A **class** is a blueprint/template.
+
+### ✅ Object
+
+An **object** is a real instance created from a class.
+
+class Student {
+  String name = "Shruti";
+  int age = 21;
+
+  void showInfo() {
+    print("Name: $name, Age: $age");
+  }
+}
+
+void main() {
+  Student s1 = Student();   // object
+  s1.showInfo();
+}
+
+
+## 2) Constructor
+
+A **constructor** is used to initialize objects.
+
+### ✅ Default Constructor
+
+class Student {
+  Student() {
+    print("Student object created");
+  }
+}
+
+void main() {
+  Student s1 = Student();
+}
+
+
+### ✅ Parameterized Constructor
+
+class Student {
+  String name;
+  int age;
+
+  Student(this.name, this.age);
+
+  void showInfo() {
+    print("Name: $name, Age: $age");
+  }
+}
+
+void main() {
+  Student s1 = Student("Shruti", 21);
+  s1.showInfo();
+}
+
+
+## 3) Inheritance
+
+Inheritance means **one class gets properties of another class**.
+
+class Animal {
+  void eat() {
+    print("Animal is eating");
+  }
+}
+
+class Dog extends Animal {
+  void bark() {
+    print("Dog is barking");
+  }
+}
+
+void main() {
+  Dog d = Dog();
+  d.eat();   // inherited
+  d.bark();
+}
+
+
+## 4) Polymorphism
+
+Polymorphism means **same function name but different behavior**.
+
+
+class Animal {
+  void sound() {
+    print("Animal sound");
+  }
+}
+
+class Dog extends Animal {
+  @override
+  void sound() {
+    print("Dog barks");
+  }
+}
+
+void main() {
+  Animal a = Dog();
+  a.sound();  // Dog barks
+}
+
+## 5) Abstraction
+
+Abstraction means **hiding implementation and showing only essential details**.
+
+
+abstract class Vehicle {
+  void start(); // abstract method
+}
+
+class Bike extends Vehicle {
+  @override
+  void start() {
+    print("Bike started");
+  }
+}
+
+void main() {
+  Bike b = Bike();
+  b.start();
+}
+
+
+## 6) Encapsulation
+
+Encapsulation means **data hiding + controlling access using getters/setters**.
+
+In Dart, private variables are written using `_` underscore.
+
+
+class BankAccount {
+  double _balance = 0;
+
+  // getter
+  double get balance => _balance;
+
+  // setter
+  set deposit(double amount) {
+    if (amount > 0) {
+      _balance += amount;
+    }
+  }
+}
+
+void main() {
+  BankAccount acc = BankAccount();
+  acc.deposit = 5000;
+
+  print(acc.balance); // 5000
+}
